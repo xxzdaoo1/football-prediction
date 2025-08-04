@@ -10,7 +10,7 @@ model = joblib.load("model.pkl")
 scaler = joblib.load("scaler.pkl")
 
 # Load match stats data to extract features
-df = pd.read_csv("match_stats_cleaned.csv")  # same CSV used during training
+df = pd.read_csv("match_stats_cleaned.csv")
 
 class MatchTeams(BaseModel):
     home_team: str
