@@ -157,36 +157,6 @@ export default function App() {
     } catch (error) {
       console.log(error);
     }
-
-
-    
-    // // Simulate ML processing time
-    // await new Promise(resolve => setTimeout(resolve, 2000 + Math.random() * 1000));
-    
-    // const newPrediction = generatePrediction(teamA, teamB);
-    // setPrediction(newPrediction);
-    
-    // // Add to history
-    // const mostLikelyResult = newPrediction.winA > newPrediction.winB 
-    //   ? newPrediction.winA > newPrediction.draw 
-    //     ? `${teamA} Win (${newPrediction.winA}%)`
-    //     : `Draw (${newPrediction.draw}%)`
-    //   : newPrediction.winB > newPrediction.draw
-    //     ? `${teamB} Win (${newPrediction.winB}%)`
-    //     : `Draw (${newPrediction.draw}%)`;
-    
-    // const newHistoryItem = {
-    //   id: Date.now().toString(),
-    //   date: new Date().toISOString().split('T')[0],
-    //   teamA,
-    //   teamB,
-    //   predictedResult: mostLikelyResult,
-    //   confidence: newPrediction.confidence,
-    //   status: "pending"
-    // };
-    
-    // setHistory(prev => [newHistoryItem, ...prev]);
-    // setIsLoading(false);
     
     toast.success("Prediction generated successfully!");
   };
